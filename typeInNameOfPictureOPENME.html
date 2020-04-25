@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Picture Shower By Name</title>
+        <script>
+            alert("Go to the directory: ./files/pictures and add your picture. Add a name to the picture and in the following prompt enter the name of the photo (case sensitive).");
+           
+           var picture = prompt("Enter the name of the picture. Leave blank to show default.");
+           var neworhere = confirm("New tab or just here? OK for first, Cancel for last.");
+
+            var defaultDirectory = "./files/pictures/code.jpg";
+           var secondaryDirectory = "./files/pictures/"+picture;
+
+            if(picture = false){
+                if(neworhere = true){
+
+                window.open(defaultDirectory);
+                }else{
+                    window.location = defaultDirectory;
+                }
+            }else{
+                if(neworhere = false){
+                window.location = secondaryDirectory;
+                }else{
+                    window.open(secondaryDirectory);
+                }
+
+
+
+            }
+
+            
+            
+        
+        </script>
+    </head>
+    <body>
+
+
+        <div>
+            <div>
+            <p>Your picture will show here</p>
+            </div>
+        </div>
+    </body>
+    </html>
